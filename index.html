@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Phone Store</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -23,8 +30,7 @@
             <section class="cta">
                 <h1>Apple Iphone 13 Pro Max</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum et quisquam eos eveniet sint
-                    repellendus, aperiam commodi, accusantium ipsum nostrum, facilis enim error quibusdam dolores
-                    adipisci saepe distinctio temporibus nisi cumque ex?</p>
+                    repellendus.</p>
                 <button class="btn">Buy Now</button>
             </section>
             <section class="banner">
@@ -38,22 +44,89 @@
                 <div class="search-container">
                     <div class="search-left">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search Your Phone" />
+                        <input type="text" placeholder="Search Your Phone" id="search-input-field" />
                     </div>
-                    <button class="btn">Search</button>
+                    <button class="btn" onclick="handleSearch()">Search</button>
                 </div>
             </section>
 
-            <section class="cards">
+            <section id="cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" alt="Galaxy S22 5G" />
+                    </div>
+                    <h3 class="card-title">Galaxy S22 5G</h3>
+                    <p class="card-description"> Galaxy S22 5G is a great phone with amazing features.</p>
+                    <div class="card-button">
+                        <button class="btn">Show Details</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" alt="Galaxy S22 5G" />
+                    </div>
+                    <h3 class="card-title">Galaxy S22 5G</h3>
+                    <p class="card-description"> Galaxy S22 5G is a great phone with amazing features.</p>
+                    <div class="card-button">
+                        <button class="btn">Show Details</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" alt="Galaxy S22 5G" />
+                    </div>
+                    <h3 class="card-title">Galaxy S22 5G</h3>
+                    <p class="card-description"> Galaxy S22 5G is a great phone with amazing features.</p>
+                    <div class="card-button">
+                        <button class="btn">Show Details</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" alt="Galaxy S22 5G" />
+                    </div>
+                    <h3 class="card-title">Galaxy S22 5G</h3>
+                    <p class="card-description"> Galaxy S22 5G is a great phone with amazing features.</p>
+                    <div class="card-button">
+                        <button class="btn">Show Details</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg" alt="Galaxy S22 5G" />
+                    </div>
+                    <h3 class="card-title">Galaxy S22 5G</h3>
+                    <p class="card-description"> Galaxy S22 5G is a great phone with amazing features.</p>
+                    <div class="card-button">
+                        <button class="btn">Show Details</button>
+                    </div>
+                </div>
 
             </section>
         </section>
     </main>
     <footer>
         <section class="upper-footer">
-            <h2>My Phone Store</h2>
-            <p>Learn How to use API Store</p>
+            <div>
+                <h2>My Phone Store</h2>
+                <p>Learn How to use API Store</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/bijoychandraroy001/" target="_blank">
+                    <img src="./assets/facebook.png" alt="facebook" />
+                </a>
+                <a href="https://x.com/Bijoy00001" target="_blank">
+                    <img src="./assets/twitter.png" alt="x" />
+                </a>
+                <a href="https://www.instagram.com/bijoy_chandra_roy/" target="_blank">
+                    <img src="./assets/instagram.png" alt="instagram" />
+                </a>
+
+                <button class="btn">Join Premium</button>
+            </div>
         </section>
+        <hr>
         <section class="links">
             <div class="column-1">
                 <a href="">Products</a>
