@@ -1,4 +1,5 @@
 const handleSearch = () => {
+    toggleLoadingSpinner(true);
     const cardContainer = document.getElementById("cards");
     cardContainer.textContent = "";
     const searchField = document.getElementById("search-input-field");
@@ -30,5 +31,15 @@ const displayPhones = (phones) => {
             </div>
         `;
         cardContainer.appendChild(phoneCard);
-    });
+
+    }); toggleLoadingSpinner(false);
+}
+
+const toggleLoadingSpinner = (isLoading) => {
+    const loaderContainer = document.getElementById("loader-container");
+    if (isLoading) {
+        loaderContainer.classList.remove("hidden");
+    } else {
+        loaderContainer.classList.add("hidden");
+    }
 }

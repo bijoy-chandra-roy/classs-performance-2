@@ -137,7 +137,7 @@ footer {
   margin: 40px 0px 120px;
 }
 .card {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -187,4 +187,33 @@ footer {
   #cards {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
 }
